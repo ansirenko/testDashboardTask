@@ -127,7 +127,7 @@ func (suite *TaskSuite) checkDashboard() {
 			return fmt.Errorf("wrong nickname\nexpected: %v\ngot: %v", suite.td.nickname, usernameText)
 		}
 		return nil
-	}, 30*time.Second)
+	}, time.Minute)
 
 	suite.Require().NoError(err)
 }

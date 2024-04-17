@@ -15,7 +15,7 @@ This project includes automated tests for validating the functionality of the "R
 
 ### Prerequisites
 
-- Go (version 1.15 or later recommended)
+- Go (version 1.22 or later recommended)
 - Chrome or Chromium browser installed
 - Appropriate ChromeDriver for your Chrome version
 
