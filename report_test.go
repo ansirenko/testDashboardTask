@@ -7,24 +7,6 @@ import (
 	"time"
 )
 
-//func (suite *TaskSuite) TestRunReportsWork() {
-//	err := suite.navigateAndWait(suite.td.statisticsPage)
-//	suite.Require().NoError(err, "cant navigate to the statistics page")
-//
-//	buttonSelector := `button[type="submit"].Button--3Qzp7`
-//	elementSelector := `div.table--2pEiF[qa-element="summary-table"]`
-//	err = suite.clickButtonAndWaitForElement(buttonSelector, elementSelector)
-//	suite.Require().NoError(err, "failed to click RunReport and wait for table element")
-//
-//	value, err := suite.fetchFirstCellValue()
-//	suite.Require().NoError(err, "failed to fetch the value from the first cell")
-//
-//	intValue, err := strconv.Atoi(value)
-//	suite.Require().NoError(err, "value in first cell is not int")
-//
-//	suite.Require().GreaterOrEqual(intValue, 0, "Count of clicks unexpected")
-//}
-
 func (suite *TaskSuite) fetchFirstCellValue() (string, error) {
 	var cellValue string
 	err := chromedp.Run(suite.ctx,
